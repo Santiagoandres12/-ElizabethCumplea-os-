@@ -1,0 +1,786 @@
+/* Diseño por defecto */
+
+body {
+
+    font-family: 'Cursive', sans-serif;
+
+    background-color: #f8e0f8; /* Rosado pastel */
+
+    color: #6a1b9a; /* Morado pastel */
+
+    text-align: center;
+
+    margin: 0;
+
+    padding: 0;
+
+}
+
+/* Contenedor principal */
+
+.container {
+
+    padding: 20px;
+
+}
+
+/* Imagen de regalo */
+
+.regalo img {
+
+    width: 100%;
+
+    max-width: 300px;
+
+    cursor: pointer;
+
+    transition: transform 0.3s ease;
+
+}
+
+.regalo img:hover {
+
+    transform: scale(1.1);
+
+}
+
+/* Estilo de las interfaces */
+
+#interfaz2, #interfaz3 {
+
+    display: none;
+
+    padding: 20px;
+
+}
+
+/* Estilo del título */
+
+h2 {
+
+    font-size: 32px;
+
+    color: #6a1b9a;
+
+}
+
+/* Estilo del texto */
+
+p {
+
+    font-size: 18px;
+
+    margin: 20px 0;
+
+}
+
+/* Botones */
+
+button {
+
+    padding: 10px 20px;
+
+    background-color: #6a1b9a;
+
+    color: white;
+
+    border: none;
+
+    font-size: 18px;
+
+    cursor: pointer;
+
+    border-radius: 5px;
+
+}
+
+button:hover {
+
+    background-color: #9c4d9f;
+
+}
+
+/* Estilo del mensaje enviado */
+
+#mensajeEnviado {
+
+    margin-top: 20px;
+
+    font-size: 16px;
+
+    color: green;
+
+}
+
+/* Responsividad para pantallas más pequeñas */
+
+@media screen and (max-width: 768px) {
+
+    body {
+
+        font-size: 14px;
+
+    }
+
+    h2 {
+
+        font-size: 24px;
+
+    }
+
+    p {
+
+        font-size: 16px;
+
+    }
+
+    button {
+
+        font-size: 16px;
+
+    }
+
+    .container {
+
+        padding: 10px;
+
+    }
+
+    .regalo img {
+
+        max-width: 100%;
+
+        height: auto;
+
+    }
+
+}
+/* Fondo diferente para cada interfaz */
+.container {
+    background-color: #f8e0f8; /* Fondo rosado pastel */
+}
+
+#interfaz2 {
+    background-image: url(''); /* Cambiar fondo aquí */
+    background-size: cover;
+    background-position: center;
+}
+
+#interfaz3 {
+    background-color: #d9f2e6; /* Fondo verde pastel */
+}
+
+/* Estilo de la foto de perfil */
+.perfil {
+    position: relative;
+    margin: 0 auto;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.foto-perfil {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 3px solid #6a1b9a;
+}
+
+/* Corazones animados */
+.corazones {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    top: -20px;
+}
+
+.corazon {
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 50%;
+    animation: latido 2s infinite;
+    opacity: 0;
+}
+
+@keyframes latido {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.5);
+        opacity: 1;
+    }
+}
+
+/* Centrar el botón (gif) hacia abajo */
+.regalo {
+    margin-top: 200px;
+    text-align: center;
+}
+
+/* Suavizado de las transiciones entre interfaces */
+.oculta {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.visible {
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+}
+/* Diseño por defecto */
+body {
+    font-family: 'Cursive', sans-serif;
+    background-color: #f8e0f8; /* Rosado pastel */
+    color: #6a1b9a; /* Morado pastel */
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Contenedor principal */
+.container {
+    padding: 20px;
+}
+
+/* Imagen de regalo */
+.regalo img {
+    width: 100%;
+    max-width: 300px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.regalo img:hover {
+    transform: scale(1.1);
+}
+
+/* Estilo de las interfaces */
+#interfaz2, #interfaz3 {
+    display: none;
+    padding: 20px;
+}
+
+/* Estilo del título */
+h2 {
+    font-size: 32px;
+    color: #6a1b9a;
+}
+
+/* Estilo del texto */
+p {
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+/* Botones */
+button {
+    padding: 10px 20px;
+    background-color: #6a1b9a;
+    color: white;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #9c4d9f;
+}
+
+/* Estilo del mensaje enviado */
+#mensajeEnviado {
+    margin-top: 20px;
+    font-size: 20px;
+    color: green;
+}
+
+/* Responsividad para pantallas más pequeñas */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+    h2 {
+        font-size: 24px;
+    }
+    p {
+        font-size: 16px;
+    }
+    button {
+        font-size: 16px;
+    }
+    .container {
+        padding: 10px;
+    }
+    .regalo img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+/* Estilo para la imagen circular */
+.foto-perfil {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 10px auto;
+    border: 5px solid #fff; /* O el color que prefieras */
+}
+
+/* Animación de los corazones */
+.corazones {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    animation: corazonAnimado 2s infinite;
+}
+
+.corazon {
+    font-size: 2rem;
+    animation: moverCorazon 1.5s ease-in-out infinite;
+}
+
+@keyframes corazonAnimado {
+    0% { opacity: 0; transform: scale(0.8); }
+    50% { opacity: 1; transform: scale(1.2); }
+    100% { opacity: 0; transform: scale(0.8); }
+}
+
+@keyframes moverCorazon {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+#interfaz2 {
+  
+    background-image: url('https://i.ibb.co/7rPngcz/Picsart-25-01-17-14-30-13-352.jpg'); /* Cambia la URL si es necesario */
+
+    background-size: contain; /* Asegura que la imagen cubra todo el área */
+
+    background-position: center; /* Centra la imagen */
+
+    background-repeat: no-repeat; /* Evita que se repita la imagen */
+ background-color: #ffffff; /* Color de fondo para áreas vacías */
+    min-height: 100vh; /* Asegura que la interfaz ocupe toda la altura de la pantalla */
+
+}
+#interfaz3 {
+
+    background-color: #d9f2e6; /* Fondo verde pastel */
+
+    background-size: cover; /* En caso de que quieras poner una imagen, la ajusta al tamaño */
+
+    background-position: center;
+
+    background-repeat: no-repeat;
+
+    min-height: 100vh; /* Asegura que la interfaz ocupe toda la altura de la pantalla */
+
+    padding: 20px;
+
+}
+/* Estilo para el botón pequeño y en la esquina inferior derecha */
+
+.volver {
+
+    position: fixed;
+
+    bottom: 20px;  /* Coloca el botón 20px desde el borde inferior */
+
+    right: 20px;   /* Coloca el botón 20px desde el borde derecho */
+
+    padding: 5px 10px;  /* Tamaño pequeño del botón */
+
+    font-size: 12px;     /* Letra pequeña */
+
+    background-color: #6a1b9a; /* Morado pastel */
+
+    color: white;
+
+    border: none;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+
+}
+
+.volver:hover {
+
+    background-color: #9c4d9f; /* Color de fondo al pasar el cursor */
+
+}
+  /* El botón se mostrará solo en la interfaz 3 */
+
+.volver {
+
+    position: fixed;
+
+    bottom: 20px; /* Coloca el botón 20px desde el borde inferior */
+
+    right: 20px;  /* Coloca el botón 20px desde el borde derecho */
+
+    padding: 5px 10px; /* Tamaño pequeño del botón */
+
+    font-size: 12px;    /* Letra pequeña */
+
+    background-color: #6a1b9a; /* Morado pastel */
+
+    color: white;
+
+    border: none;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    display: none; /* Inicialmente oculto */
+
+}
+
+#interfaz3 .volver {
+
+    display: block; /* Solo se muestra en la interfaz 3 */
+
+}
+
+.volver:hover {
+
+    background-color: #9c4d9f; /* Color de fondo al pasar el cursor */
+
+}
+body {
+
+  overflow-x: hidden; /* Bloquea el desplazamiento horizontal */
+
+}
+img {
+
+  -webkit-user-drag: none; /* Bloquea el arrastre de la imagen */
+
+  -webkit-touch-callout: none; /* Bloquea el menú contextual en móviles */
+
+  user-select: none; /* Previene la selección de texto/imágenes */
+
+}
+/* Esto elimina el borde de enfoque de imágenes y botones */
+
+img:focus, button:focus {
+
+    outline: none;
+
+}
+/* Evitar que el contenido del GIF sea seleccionable */
+
+#gifSinAbrir {
+
+    user-select: none;
+
+}
+/* Evitar el borde azul (outline) en el gif */
+
+#gifSinAbrir:focus {
+
+    outline: none;
+
+}
+/* Eliminar el borde azul de los elementos al ser seleccionados */
+
+#gifSinAbrir:focus {
+
+    outline: none !important; /* Evita que el borde azul sea visible */
+
+}
+
+/* Desactivar la selección de texto o imágenes */
+
+#gifSinAbrir {
+
+    user-select: none !important;
+
+    -webkit-user-select: none !important; /* Para Safari */
+
+    -ms-user-select: none !important; /* Para IE/Edge */
+
+}
+
+/* Asegúrate de que el contenedor del gif también no tenga borde */
+
+#gifContainer:focus {
+
+    outline: none !important;
+
+}
+
+#gifContainer {
+
+    user-select: none !important;
+
+    -webkit-user-select: none !important;
+
+    -ms-user-select: none !important;
+
+}
+
+/* Evitar que se resalte el contorno del gif en todo momento */
+
+img {
+
+    -webkit-tap-highlight-color: transparent; /* Para dispositivos táctiles */
+
+    -webkit-focus-ring-color: transparent; /* Desactiva los anillos de enfoque en Webkit */
+
+    outline: none !important;
+
+}
+/* Desactivar la selección de texto en todas las interfaces */
+
+#interfaz1, #interfaz2, #interfaz3, .container, body {
+
+    user-select: none !important; /* Deshabilita la selección de texto */
+
+    -webkit-user-select: none !important; /* Para Safari */
+
+    -ms-user-select: none !important; /* Para IE/Edge */
+
+}
+
+/* Si deseas deshabilitar la selección de texto en cualquier otro elemento, agrega esta regla a tu CSS */
+
+#interfaz1 * , #interfaz2 * , #interfaz3 * {
+
+    user-select: none !important;
+
+    -webkit-user-select: none !important;
+
+    -ms-user-select: none !important;
+
+}
+.neonderthaw-regular {
+
+    font-family: "Neonderthaw", serif;
+
+    font-weight: 400;
+
+    font-style: normal;
+
+}
+
+h2 {
+
+    font-family: "Neonderthaw", serif;  /* Aplicado a los títulos */
+
+    font-weight: 400;
+
+    font-style: normal;
+
+    font-size: 32px;
+
+    color: #000000;
+
+}
+#nombreCumpleañera {
+
+  font-family: "Neonderthaw", serif;
+
+  font-weight: 400;
+
+  font-style: normal;
+
+  font-size: 70px; /* Tamaño más grande para el título "Elizabeth" */
+  
+  color: #000000; /* Negro */
+  position: absolute;
+
+  top: -60px; /* Ajusta este valor para mover hacia arriba o abajo */
+
+  left: 50%;
+
+  transform: translateX(-50%); /* Centra el título horizontalmente */
+
+}
+#mensajePersonalizado {
+
+  font-family: "cursive", serif;
+
+  font-weight: 400;
+
+  font-style: normal;
+
+  font-size: 20px; /* Tamaño ajustado para el texto debajo de "Elizabeth" */
+
+  color: #000000; /* Negro */
+  position: absolute;
+
+  top: 100px; /* Ajusta este valor para mover hacia arriba o abajo */
+  left: 5%;
+  width: 85%; /* Reduce el ancho del texto */
+
+    max-width: 500px; /* Máximo ancho del texto */
+
+    margin: 0 auto; /* Centra el mensaje */
+
+    line-height: 1.6; /* Aumenta el espacio entre líneas para alargar el texto hacia abajo */
+
+    padding: 10px; /* Agrega un poco de espacio alrededor del texto */
+  text-align: center; /* Centra el texto dentro del contenedor */
+  opacity: 1; /* Inicialmente visible */
+
+    transition: opacity 2s ease-in-out; /* Transición para desvanecer */
+
+}
+
+#mensajePersonalizado.fade {
+
+    opacity: 0; /* Cuando se aplica la clase 'fade', el mensaje se desvanece */
+
+}
+
+#mensajePersonalizado span {
+
+    background-color: rgba(255, 255, 255, 0.7);
+
+    padding: 5px;
+
+    display: inline-block;
+
+}
+
+#mensajePersonalizado span {
+
+    background-color: rgba(255, 255, 255, 0.7); /* Fondo blanco con transparencia (0.7 de opacidad) */
+    padding: 5px; /* Espaciado alrededor del texto */
+
+    display: inline-block; /* Asegura que cada línea se trate por separado */
+}
+#interfaz2 button {
+
+  padding: 10px 20px;
+
+  background-color: #6a1b9a;
+
+  color: white;
+
+  border: none;
+
+  font-size: 18px;
+
+  cursor: pointer;
+
+  border-radius: 5px;
+
+  position: absolute;
+
+  bottom: -75px; /* Ajusta este valor según lo necesites */
+
+  left: 50%;
+
+  transform: translateX(-50%); /* Centra el botón horizontalmente */
+
+}
+/* Transición de desvanecimiento para las interfaces */
+
+#interfaz2, #interfaz3 {
+
+    opacity: 0;
+
+    transition: opacity 1s ease-in-out;
+
+    display: none;
+
+}
+
+#interfaz2.mostrar, #interfaz3.mostrar {
+
+    display: block;
+
+    opacity: 1;
+
+}
+
+/* Estilos para el mensaje personalizado */
+
+#mensajePersonalizado {
+
+    opacity: 1;
+
+    transition: opacity 1s ease-in-out;
+
+}
+
+/* Cuando el mensaje se desvanece */
+
+#mensajePersonalizado.desvanecer {
+
+    opacity: 0;
+
+}
+/* Contenedor del texto personalizado con desplazamiento limitado */
+
+#mensajePersonalizado {
+
+    max-height: 71vh; /* Limita la altura al 80% de la altura de la ventana */
+
+    overflow-y: auto; /* Habilita el desplazamiento vertical */
+
+    padding: 10px;
+
+    background-color: rgba(255, 255, 255, 0.3); /* Fondo semitransparente para legibilidad */
+
+    border-radius: 10px;
+
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sutil sombra */
+
+    font-size: 18px; /* Tamaño de fuente ajustable */
+
+    line-height: 1.5; /* Mejora la legibilidad */
+
+    margin: 0 auto; /* Centra horizontalmente */
+
+    width: 85%; /* Ajusta el ancho */
+  position: relative; /* Permite moverlo con top, left, etc. */
+
+
+    left: 2px; /* Ajusta hacia la derecha */
+
+}
+.boton-whatsapp {
+
+  position: fixed;
+
+  bottom: 20px;
+
+  left: 20px; /* Posición en la esquina inferior izquierda */
+
+  z-index: 999;
+
+}
+
+.boton-whatsapp button {
+
+  background-color: #6a1b9a;
+
+  color: white;
+
+  border: none;
+
+  border-radius: 5px;
+
+  padding: 5px 10px;
+
+  font-size: 12px;
+
+  cursor: pointer;
+
+}
+
+.boton-whatsapp button:hover {
+
+  background-color: #9c4d9f;
+
+}

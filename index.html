@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>🎁❤️❤️❤️🎁</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Neonderthaw&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google" content="notranslate">
+    <title>Feliz Cumpleaños, Elizabeth</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+</head>
+<body>
+  <audio id="background-music" loop>
+    <source src="https://www.cjoint.com/doc/23_04/MDytGnC3a2m_happy-birthday-to-you-piano-version-13976.mp3" type="audio/mp3">
+  </audio>
+
+  <!-- Interfaz 1 -->
+  <div class="container">
+    <div class="regalo" onclick="abrirRegalo()">
+      <!-- Inicialmente muestra el GIF cerrado -->
+      <img src="https://i.ibb.co/3y6PjT4/ezgif-5-804f50d858.gif" alt="Regalo sin abrir" id="gifSinAbrir" class="regalo-img">
+    </div>
+  </div>
+
+  <!-- Interfaz 2 -->
+  <div id="interfaz2" class="oculta">
+    <h2 id="nombreCumpleañera">Elizabeth</h2>
+    <p id="mensajePersonalizado"><span>Bueno primero que nada feliz cumpleaños amorcito, ❤️ te deseo lo mejor en este día, tan especial para ti mi vida ❤️ Dios te llene de bendiciones 
+
+Sabes que te quiero demasiado, eres una persona muy especial para mí
+
+🥰Sabes que siempre que tú me lo permitas seré tu apoyo hoy y para siempre.
+
+❤️Eres mi mayor alegria y te agradezco tanto por todo lo que me das y todo lo que has hecho por mi, por llenar mi vida de momentos inolvidables y hoy celebro no solo tu cumpleaños, sino también el privilegio de tenerte en mi vida.
+
+🥹Que pues en estos momentos nos encontramos un poco separados pero eso no me importa,😊 yo te seguire queriendo y tratando de la misma manera en la que lo hago desde que te conoci y te deseo que cumplas muchos años más y que de poder ser para estar a tú lado.
+
+🥳Feliz cumpleaños mi vida hermosa, espero que te la pases super, sabiendo lo increibe que eres, lo importante y lo mucho que significas para mi.
+ahora veras unas de mis fotos favoritas que fue dificil escogerlas pero esas son las que mas me gustan obvio es por que tu estas en ellas y en todas las fotos tu estas hermosa como siempre y realmente todas tus fotos me encantan.
+
+❤️Antes de que cambiesde pagina esto ya te lo habia dicho en un momento que si estubo un poco apresurado pero en estos momentos te digo que no estaba equivocado realmente TE AMOO mi amor. 🥰❤️
+</span></p>
+    <button onclick="mostrarInterfaz3()">Siguiente</button>
+  </div>
+
+  <!-- Interfaz 3 -->
+  <div id="interfaz3" style="display:none;">
+    <h2>Feliz cumpleaños # 20, mi amor. Te quiero mucho</h2>
+    <!-- Botón de WhatsApp -->
+
+<div class="boton-whatsapp">
+
+  <button onclick="window.open('https://tinyurl.com/Mensajechat')">Chat</button>
+
+</div>
+   <button class="volver" onclick="mostrarInterfaz1()">Inicio</button>
+    <img src="https://i.ibb.co/5L3n0mJ/IMG-20250114-WA0009.jpg" alt="Foto de Perfil" class="foto-perfil">
+
+    <div class="corazones">
+      <span class="corazon">❤️</span>
+      <span class="corazon">❤️</span>
+      <span class="corazon">❤️</span>
+    </div>
+
+    <form id="formulario" action="https://formspree.io/f/mgvvqpgd" method="POST">
+      <input type="hidden" name="_subject" value="Feliz Cumpleaños para Elizabeth">
+      <input type="text" name="nombre" value="Elizabeth" hidden>
+      <input type="text" name="mensaje" value="¡Te quiero mucho! 🎁" hidden>
+      <button type="submit">🎁Regalito🎁</button>
+    </form>
+
+    <p id="mensajeEnviado" style="display:none;">No es como quisiera pero sí como puedo</p>
+  </div>
+
+  <script src="script.js"></script>
+  <script type="text/javascript">
+    // Función para cambiar el GIF y pasar a la interfaz 2
+    function abrirRegalo() {
+      const gifSinAbrir = document.getElementById("gifSinAbrir");
+
+      // Cambia el GIF al de regalo abierto
+      gifSinAbrir.src = "https://i.ibb.co/2Ky0ZYf/ezgif-5-2ec6e13191.gif"; // Sustituye con la URL del GIF abierto
+
+      // Después de 1.5 segundos, pasa a la interfaz 2
+      setTimeout(() => {
+        reproducirMusicaYMostrarInterfaz2();
+      }, 1500);
+    }
+
+    function reproducirMusicaYMostrarInterfaz2() {
+      var musica = document.getElementById('background-music');
+      musica.play();  // Reproduce la música automáticamente
+      mostrarInterfaz2();  // Muestra la interfaz 2
+    }
+
+    function mostrarInterfaz2() {
+      const container = document.querySelector(".container");
+      const interfaz2 = document.getElementById("interfaz2");
+      
+      container.style.display = "none";  // Oculta la interfaz 1
+      interfaz2.style.display = "block";  // Muestra la interfaz 2
+    }
+
+    function mostrarInterfaz3() {
+      const interfaz2 = document.getElementById("interfaz2");
+      const interfaz3 = document.getElementById("interfaz3");
+
+      interfaz2.style.display = "none";  // Oculta la interfaz 2
+      interfaz3.style.display = "block";  // Muestra la interfaz 3
+    }
+
+    function mostrarInterfaz1() {
+      const interfaz3 = document.getElementById("interfaz3");
+      const container = document.querySelector(".container");
+
+      interfaz3.style.display = "none";  // Oculta la interfaz 3
+      container.style.display = "block";  // Muestra la interfaz 1
+    }
+
+    document.getElementById("formulario").addEventListener("submit", function(event) {
+      event.preventDefault();
+      document.getElementById("mensajeEnviado").style.display = "block";
+    });
+
+    document.addEventListener('DOMContentLoaded', function () {
+      document.documentElement.setAttribute('translate', 'no');
+    });
+  </script>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
